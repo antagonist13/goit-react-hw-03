@@ -1,4 +1,5 @@
-export default function Contact({ contacts:{id, name, number}, deleteContact }) {
+export default function Contact({ contacts: {name, id, number}, deleteContact }) {
+    console.log(name);
     return (
     <div >
         <p >{name}</p>
