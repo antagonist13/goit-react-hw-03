@@ -3,6 +3,7 @@ import SearchBox from '../SearchBox/SearchBox'
 import ContactList from '../ContactList/ContactList'
 import { useState, useEffect } from 'react'
 import { nanoid } from 'nanoid'
+import css from './App.module.css'
 
 export default function App() {
     const data = () => {
@@ -50,7 +51,7 @@ export default function App() {
     });
     }
     const visibleContacts = contacts.filter((contact) => contact.name.toLowerCase().includes(searching.toLowerCase()))
-    return <div>
+    return <div className={css.container}>
   <h1>Phonebook</h1>
         <ContactForm addContact={addContact} />
         <SearchBox value={searching} onSearching={setSearching} />
