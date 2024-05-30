@@ -46,6 +46,7 @@ export default function App() {
         })   
     }
     const deleteContact = (contactId) => {
+        localStorage.removeItem(`contact-${contactId}`)
         setContacts((prevContacts) => {
             return prevContacts.filter((contact) => contact.id !== contactId);
     });
