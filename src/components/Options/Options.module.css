@@ -1,0 +1,6 @@
+.options {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding-bottom: 10px;
+}
