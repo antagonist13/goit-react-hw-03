@@ -1,3 +1,3 @@
-export default function ContactForm() {
-    return
+export default function ContactForm({ addContact }) {
+    return <button onClick={addContact}> Add Contact </button>
 }
